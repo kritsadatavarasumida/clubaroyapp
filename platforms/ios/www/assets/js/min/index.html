@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline' https: 'www.clubaroy.com' http:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: 'www.clubaroy.com' http:"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/img/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="/assets/img/favicons/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>CLUBAROY</title>
+
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.css">
+    <link rel="stylesheet" href="bower_components/swipebox/src/css/swipebox.css">
+    <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!--<link rel="stylesheet" href="assets/themes/sea/style.css" id="theme-style">-->
+    <link rel="stylesheet" href="assets/themes/clubaroy/style.css" id="theme-style">
+    <style>
+        #map {
+            width: 100%;
+            height: 300px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .infinite-scroll-preloader {
+            margin-top:-20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .infinite-scroll-preloader .preloader {
+            width:34px;
+            height:34px;
+        }     
+        .image1 {
+            position: relative;
+			float:left;
+			width:90%;
+            style="z-index: 0;
+        }
+
+        .segment1 {
+            opacity: 0.4;
+            position: relative;
+			float:left;
+			width:90%;
+            style="z-index: 1;
+        }
+</style>
+</head>
+<body>
+
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+
+<!-- Left panel -->
+<div class="panel panel-left panel-reveal">
+    <div class="line"></div>
+
+    <div class="logo-box">
+        <h2>CLUBAROY</h2>
+        <div>ชิม โชว์ แชร์</div>
+    </div>
+
+    <div class="list-block mt-15">
+        <div class="list-group">
+            <nav>
+                <ul>
+                    <li class="divider">
+                        Menu
+                    </li>
+                    <li>
+                        <a href="index.html" class="item-link close-panel item-content">
+                            <div class="item-media">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Home</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="market.html" class="item-link close-panel item-content">
+                            <div class="item-media">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">จ่ายตลาด</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="promotion.html" class="item-link close-panel item-content">
+                            <div class="item-media">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">คูปอง</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news.html" class="item-link close-panel item-content">
+                            <div class="item-media">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">ข่าวสาร</div>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</div>
+
+<!-- Right panel -->
+<div class="panel panel-right panel-reveal">
+    <div class="line"></div>
+
+
+    <div class="user-banner">
+        <span class="ava-box">
+            <img src="assets/img/tmp/ava4.jpg" id="userpicture">
+        </span>
+    </div>
+
+    <div class="welcome-msg">
+        <h3>ยินดีต้อนรับ <strong id="facebookname">Kritpong</strong></h3>
+        <h4>คุณสบายดีไหม?</h4>
+    </div>
+
+    <div class="list-block mt-15">
+        <div class="list-group">
+            <nav>
+                <ul>
+                    <li id="lifav">
+                        <a href="favorite-user.html" class="item-link close-panel item-content">
+                            <div class="item-media">
+                                <i class="fa fa-heart-o"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Favorites</div>
+                                <div class="item-after">
+                                    <span class="badge badge-primary" id="bafav">32</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="lireview">
+                        <a href="comment-user.html" class="item-link close-panel item-content">
+                            <div class="item-media">
+                                <i class="fa fa-heart-o"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Review</div>
+                                <div class="item-after">
+                                    <span class="badge badge-primary" id="bareview">32</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="limyrec">
+                        <a href="#" class="item-link close-panel item-content" id="userrecipe">
+                            <div class="item-media">
+                                <i class="fa fa-heart-o"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">My Recipes</div>
+                                <div class="item-after">
+                                    <span class="badge badge-primary"  id="bamyrec">32</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="lilogin">
+                        <a href="#"  data-popup=".popup-login" class="open-popup item-link close-panel item-content" id="login">
+                            <div class="item-media">
+                                <i class="fa fa-key"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Login</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="lilogout">
+                        <a href="#"  data-popup=".popup-login" class="item-link close-panel item-content" id="logout">
+                            <div class="item-media">
+                                <i class="fa fa-sign-out"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Logout</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Views -->
+<div class="views">
+    <div class="view view-main">
+
+        <div class="navbar navbar-clear" style="background-color:#000000">
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="link icon-only open-panel">
+                        <span class="kkicon icon-menu"></span>
+                    </a>
+                </div>
+                <div class="center sliding">
+                
+                  <!-- Search bar -->
+    <div class="searchbar searchbar-init searchbar-input">
+      <input type="search" placeholder="Search" name="xstring"  id="searchall">
+      <input type="hidden" name="rand" value="2" >
+    </div>
+ 
+  <!-- Search bar overlay -->
+  <div class="searchbar-overlay"></div>    
+                
+                </div>
+                
+
+                <div class="right">
+                    <a href="#" class="link icon-only open-panel" data-panel="right">
+                        <span class="kkicon icon-user"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pages navbar-fixed toolbar-fixed">
+            <div data-page="index" class="page page-bg">
+
+                <div class="toolbar">
+                    <div class="toolbar-inner">
+                        <a href="index.html" class="link">
+                        <img src="assets/themes/clubaroy/img/icon1.png" alt=""/> 
+                        </a>
+                        <a href="favorite.html" class="link">
+                        <img src="assets/themes/clubaroy/img/icon2.png" alt=""/> 
+                        </a>
+                        <a href="recipes.html" class="link">
+                        <img src="assets/themes/clubaroy/img/icon3.png" alt=""/> 
+                        </a>
+                        <a href="technic.html" class="link">
+                        <img src="assets/themes/clubaroy/img/icon4.png" alt=""/> 
+                        </a>
+                        <a href="healthy.html" class="link">
+                        <img src="assets/themes/clubaroy/img/icon5.png" alt=""/> 
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="page-content">
+                  <nav class="dashboard-menu">
+                        <div class="row text-center">
+                            <div class="col-100"">
+                            
+							<img src="http://www.clubaroy.com/mobile/assets/themes/clubaroy/img/splash1.png" alt="" width="800" usemap="#clubaroi" id="imagemap1"/>
+                            <map name="clubaroi">
+ 						 	<area shape="poly" coords="400,469,207,235,402,165" class="link" id="aroidara">
+  							<area shape="poly" coords="403,466,404,167,593,235" class="link" id="aroiwanni">
+  							<area shape="poly" coords="404,471,595,238,697,414" class="link" id="aroisala">
+  							<area shape="poly" coords="408,473,697,417,661,618" class="link" id="aroitravel">
+  							<area shape="poly" coords="404,474,664,620,506,749" class="link" id="aroidstar">
+  							<area shape="poly" coords="401,473,503,749,301,751" class="link" id="aroidcat">
+  							<area shape="poly" coords="400,476,300,748,146,617" class="link" id="aroidprov">
+  							<area shape="poly" coords="397,472,139,618,102,417" class="link" id="aroidsonjon">
+  							<area shape="poly" coords="396,471,206,235,101,410" class="link" id="aroiduni">
+							<area shape="circle" coords="709,901,44" class="link" id="aroical">
+                            </map> 
+                            <img src="http://www.clubaroy.com/mobile/assets/themes/clubaroy/img/splash1.png" alt="" width="800" usemap="#clubaroi1" id="imagemap2"/>
+                            <map name="clubaroi1">
+                            <area shape="poly" coords="400,469,207,235,402,165" class="link" id="aroidara">
+                            <area shape="poly" coords="403,466,404,167,593,235" class="link" id="aroiwanni">
+                            <area shape="poly" coords="404,471,595,238,697,414" class="link" id="aroisala">
+                            <area shape="poly" coords="408,473,697,417,661,618" class="link" id="aroitravel">
+                            <area shape="poly" coords="404,474,664,620,506,749" class="link" id="aroidstar">
+                            <area shape="poly" coords="401,473,503,749,301,751" class="link" id="aroidcat">
+                            <area shape="poly" coords="400,476,300,748,146,617" class="link" id="aroidprov">
+                            <area shape="poly" coords="397,472,139,618,102,417" class="link" id="aroidsonjon">
+                            <area shape="poly" coords="396,471,206,235,101,410" class="link" id="aroiduni">
+							<area shape="circle" coords="709,901,44" class="link" id="aroical">
+                            </map>
+                            
+                            </div>
+
+                       </div>
+                       </nav>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="popup popup-login">
+    <div class="content-block">
+        <a href="#" class="close-popup" id="closeclubaroy">
+            ปิด
+        </a>
+
+        <div class="text-center mt-70">
+            <h2>ยินดีต้อนรับ</h2>
+
+            <h3>กรุณา Login ก่อนการใช้งาน</h3>
+        </div>
+
+        <div class="forms mt-50">
+            <form method="post"
+                  class="js-validate"
+                  novalidate="novalidate">
+
+                <div class="form-row">
+                    <div class="input-text">
+                        <input type="text" name="usernameclubaroy" id="usernameclubaroy" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-text">
+                        <input type="password" name="passwordclubaroy" id="passwordclubaroy" placeholder="Password" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-submit">
+                        <a href="#" class="button button-big js-form-submit button-fill button-primary" id="loginclubaroy">Login</a>
+                    </div>
+                </div>
+            </form>
+                 <div class="form-row">
+                    <div class="input-submit">
+                        <a href="#" data-popup=".popup-register" class="open-popup button button-big js-form-submit  button-fill button-primary2" id="loginclubaroy">สมัครสมาชิก</a>
+                    </div>
+                </div>
+                
+           		
+
+
+<div id="status">
+</div>
+                <div class="form-row">
+                    <div class="input-submit">
+
+                        <div class="fb-login-button" onClick="facebookLongin" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false" style="width:100%"></div>
+                    </div>
+                </div>
+                 <div class="form-row">
+                    <div class="input-submit">
+                        <a href="#" class="button button-big button-fill button-primary3" id="facebookLogin">Facebook</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="popup popup-register">
+    <div class="content-block">
+        <a href="#" class="close-popup">
+            ปิด
+        </a>
+
+        <div class="text-center mt-70">
+            <h2>Register!</h2>
+
+            <h3>สมัครสมาชิก!</h3>
+        </div>
+
+<div class="forms">
+
+
+<div class="list-block">
+  <ul>
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <input id="name" type="text" placeholder="Name">
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <input id="lastname"  type="text" placeholder="Lastname">
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <input id="email"  type="email" placeholder="E-mail">
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <input id="password"  type="password" placeholder="Password">
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <select id="gender">
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  </div> 
+  
+                                              <div class="form-row">
+                                                <div class="input-submit">
+                                                    <a href="#" class="button button-big js-form-submit button-fill button-primary" id="registeruser1">Submit</a>
+                                                </div>
+                                            </div>
+                                            
+ 
+                                            
+                                  
+                                        </div>
+
+
+    </div>
+</div>
+
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/framework7/dist/js/framework7.min.js"></script>
+<script type="text/javascript" src="bower_components/swipebox/src/js/jquery.swipebox.min.js"></script>
+<script type="text/javascript" src="bower_components/jquery-validate/dist/jquery.validate.min.js"></script>
+<script type="text/javascript" src="bower_components/Tweetie/tweetie.min.js"></script>
+<script type="text/javascript" src="bower_components/chartjs/Chart.js"></script>
+<script type="text/javascript" src="assets/js/jflickrfeed.min.js"></script>
+
+<script type="text/javascript" src="assets/js/imageMapResizer.min.js"></script>
+<script type="text/javascript" src="assets/js/min/app.js"></script>
+<script type="text/javascript" src="bower_components/swiper/dist/js/swiper.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false"></script>
+        
+<script type="text/javascript" src="assets/js/lightbox.js"></script>
+
+
+</body>
+</html>

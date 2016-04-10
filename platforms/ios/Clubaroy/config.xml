@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.clubaroy.clubaroyapp" version="2.4.8" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
+    <feature name="FacebookConnectPlugin">
+        <param name="ios-package" value="FacebookConnectPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <plugin name="FacebookConnectPlugin" value="FacebookConnectPlugin" />
+    <access origin="https://m.facebook.com" />
+    <access origin="https://graph.facebook.com" />
+    <access origin="https://api.facebook.com" />
+    <access origin="https://*.fbcdn.net" />
+    <access origin="https://*.akamaihd.net" />
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <name>Clubaroy</name>
+    <description>
+        “Clubaroy” App for food lovers. For everyone who loves to eat delicious foods.
+    </description>
+    <author email="support@Clubaroy.com" href="http://Clubaroy.com">
+        Clubaroy Team
+    </author>
+    <content src="index.html" />
+    <preference name="EnableViewportScale" value="true" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <gap:plugin name="org.apache.cordova.battery-status" />
+    <gap:plugin name="org.apache.cordova.camera" />
+    <gap:plugin name="org.apache.cordova.media-capture" />
+    <gap:plugin name="org.apache.cordova.console" />
+    <gap:plugin name="org.apache.cordova.contacts" />
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.device-motion" />
+    <gap:plugin name="org.apache.cordova.device-orientation" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.file" />
+    <gap:plugin name="org.apache.cordova.file-transfer" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.globalization" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.media" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="org.apache.cordova.vibration" />
+    <icon src="res/icons/icon.png" />
+    <gap:splash src="res/screens/screen.png" />
+    <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi" src="www/res/icon/android/icon-72-hdpi.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="www/res/icon/android/icon-96-xhdpi.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="www/res/screen/android/screen-ldpi-portrait.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="www/res/screen/android/screen-mdpi-portrait.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="www/res/screen/android/screen-hdpi-portrait.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="www/res/screen/android/screen-xhdpi-portrait.png" />
+    <icon gap:platform="ios" height="60" src="res/icons/ios/icon-60.png" width="60" />
+    <icon gap:platform="ios" height="120" src="res/icons/ios/icon-60-2x.png" width="120" />
+    <icon gap:platform="ios" height="76" src="res/icons/ios/icon-76.png" width="76" />
+    <icon gap:platform="ios" height="152" src="res/icons/ios/icon-76-2x.png" width="152" />
+    <icon gap:platform="ios" height="40" src="res/icons/ios/icon-40.png" width="40" />
+    <icon gap:platform="ios" height="80" src="res/icons/ios/icon-40-2x.png" width="80" />
+    <icon gap:platform="ios" height="57" src="res/icons/ios/icon-57.png" width="57" />
+    <icon gap:platform="ios" height="114" src="res/icons/ios/icon-57-2x.png" width="114" />
+    <icon gap:platform="ios" height="72" src="res/icons/ios/icon-72.png" width="72" />
+    <icon gap:platform="ios" height="144" src="res/icons/ios/icon-72-2x.png" width="144" />
+    <icon gap:platform="ios" height="29" src="res/icons/ios/icon-29.png" width="29" />
+    <icon gap:platform="ios" height="58" src="res/icons/ios/icon-29-2x.png" width="58" />
+    <icon gap:platform="ios" height="50" src="res/icons/ios/icon-50.png" width="50" />
+    <icon gap:platform="ios" height="100" src="res/icons/ios/icon-50-2x.png" width="100" />
+    <gap:splash gap:platform="ios" height="1024" src="res/screens/ios/Default-Portrait~ipad.png" width="768" />
+    <gap:splash gap:platform="ios" height="2048" src="res/screens/ios/Default-Portrait@2x~ipad.png" width="1536" />
+    <gap:splash gap:platform="ios" height="1536" src="res/screens/ios/Default-Landscape@2x~ipad.png" width="2048" />
+    <gap:splash gap:platform="ios" height="768" src="res/screens/ios/Default-Landscape~ipad.png" width="1024" />
+    <gap:splash gap:platform="ios" height="480" src="res/screens/ios/Default~iphone.png" width="320" />
+    <gap:splash gap:platform="ios" height="960" src="res/screens/ios/Default@2x~iphone.png" width="640" />
+    <gap:splash gap:platform="ios" height="1136" src="res/screens/ios/Default-568h@2x~iphone.png" width="640" />
+    <gap:config-file overwrite="true" parent="LSApplicationQueriesSchemes" platform="ios">
+        <array>
+            <string>fbapi</string>
+            <string>fbapi20130214</string>
+            <string>fbapi20130410</string>
+            <string>fbapi20130702</string>
+            <string>fbapi20131010</string>
+            <string>fbapi20131219</string>
+            <string>fbapi20140410</string>
+            <string>fbapi20140116</string>
+            <string>fbapi20150313</string>
+            <string>fbapi20150629</string>
+            <string>fbauth</string>
+            <string>fbauth2</string>
+            <string>fb-messenger-api20140430</string>
+        </array>
+    </gap:config-file>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+</widget>

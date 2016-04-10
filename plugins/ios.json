@@ -1,0 +1,20 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.clubaroy.clubaroyapp"
+        },
+        "phonegap-facebook-plugin": {
+            "APP_ID": "852851048169450",
+            "APP_NAME": "www.clubaroy.com",
+            "PACKAGE_NAME": "com.clubaroy.clubaroyapp"
+        }
+    },
+    "dependent_plugins": {}
+}
