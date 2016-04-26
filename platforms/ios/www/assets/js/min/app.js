@@ -45,8 +45,23 @@ function onDeviceReady() {
     console.log(devicestring);
     console.log("on device start");
     //facebookStatus();
-    
 
+    var notificationOpenedCallback = function(jsonData) {
+        console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
+        if (jsonData.additionalData.type == 0) {
+            mainView.router.loadPage('restaurant.html?rid=' + jsonData.additionalData.id);
+        } else {
+            mainView.router.loadPage('content.html?id='+jsonData.additionalData.id+'&jsonfile=news');
+        }
+    };
+
+    window.plugins.OneSignal.init("eaea949c-b97f-4409-857e-0a39b609ba47",
+        {googleProjectNumber: "711621241954"},
+        notificationOpenedCallback);
+
+    // Show an alert box if a notification comes in when the user is in your app.
+    window.plugins.OneSignal.enableInAppAlertNotification(true);
+    
 
 }
 

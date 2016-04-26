@@ -41,5 +41,13 @@
             "APP_ID": "852851048169450",
             "APP_NAME": "www.clubaroy.com"
         }
+    },
+    "onesignal-cordova-plugin": {
+        "source": {
+            "type": "registry",
+            "id": "onesignal-cordova-plugin"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

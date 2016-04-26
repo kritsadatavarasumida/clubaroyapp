@@ -29,6 +29,7 @@
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
 		43DDD27CAF9C4C21B57666C3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC8398995C64A66A4B5F98E /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
+		5E0C4E7A05B94F3BB8189111 /* OneSignalHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4F96B7D4CE4388890CA717 /* OneSignalHTTPClient.m */; };
 		61FEBA9C682A45F0AF356D7C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17C1BA6F8ED44FC91A7C802 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		7E7966DE1810823500FA85AD /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D41810823500FA85AD /* icon-40.png */; };
 		7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D51810823500FA85AD /* icon-40@2x.png */; };
@@ -40,14 +41,21 @@
 		7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DB1810823500FA85AD /* icon-76@2x.png */; };
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
-		95296EA71CA533D800FC7C66 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95296EA61CA533D800FC7C66 /* Images-2.xcassets */; };
 		954946861C6B18E800284D16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954946851C6B18E800284D16 /* Images.xcassets */; };
+		979F257041BA48D296E91B36 /* OneSignalMobileProvision.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC78F272924EE8BE3F5AD6 /* OneSignalMobileProvision.m */; };
+		A02971411C734E7CBA6BC3C4 /* OneSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9BF99EF8CF461B81F07ED5 /* OneSignal.m */; };
 		AD0DF9A7913F4AF0854AD36F /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 876180002BEF42B8AF486D10 /* FacebookConnectPlugin.m */; };
+		AFE9663BE0A94FCF9C9EF854 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7043A737F67475C959A3952 /* SystemConfiguration.framework */; };
 		B7AB23F23E3949D488300BB0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1ABFC5A6D5413BBCD0CA39 /* FacebookSDK.framework */; };
+		BF76D880C0604C2D94AC193D /* OneSignalReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A2C4D209004FE3AC9C009C /* OneSignalReachability.m */; };
+		C74E77AAFFC248B69A28DE6D /* OneSignalPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B790F271FC4FD2BC999EB2 /* OneSignalPush.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		D5639F37C6844B5F8BAA025C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D981F562F3A49A09140199B /* libsqlite3.dylib */; };
+		DC57FC84AD8F4DC9B3D18268 /* OneSignalTrackIAP.m in Sources */ = {isa = PBXBuildFile; fileRef = F604CED9B0A144F8B4200131 /* OneSignalTrackIAP.m */; };
 		DD52D0A676D646B1B176BB13 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D8AF801C9243B38523852C /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E4F09C0139B54B36855D09BA /* OneSignalJailbreakDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE91628A79346D184BB420E /* OneSignalJailbreakDetection.m */; };
 		EC1DA888AA98485FA7BE8149 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D43E1E8215B40B1A742A74B /* CDVDevice.m */; };
+		F61A15B72B9D4F9EA1E66657 /* OneSignalLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F243732A40F4A4A9A33BA61 /* OneSignalLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,12 +77,16 @@
 
 /* Begin PBXFileReference section */
 		03D8AF801C9243B38523852C /* Social.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		15B790F271FC4FD2BC999EB2 /* OneSignalPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OneSignalPush.m; path = "onesignal-cordova-plugin/OneSignalPush.m"; sourceTree = "<group>"; };
+		1ABE395EFB51461985ADC2BF /* OneSignalMobileProvision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OneSignalMobileProvision.h; path = "onesignal-cordova-plugin/OneSignalMobileProvision.h"; sourceTree = "<group>"; };
+		1AFC78F272924EE8BE3F5AD6 /* OneSignalMobileProvision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OneSignalMobileProvision.m; path = "onesignal-cordova-plugin/OneSignalMobileProvision.m"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Clubaroy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clubaroy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D981F562F3A49A09140199B /* libsqlite3.dylib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E57B905F7FA4B75B382FC9F /* OneSignalPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OneSignalPush.h; path = "onesignal-cordova-plugin/OneSignalPush.h"; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -109,19 +121,31 @@
 		7E7966DB1810823500FA85AD /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@2x.png"; sourceTree = "<group>"; };
 		7E7966DC1810823500FA85AD /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
 		7E7966DD1810823500FA85AD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
+		7F243732A40F4A4A9A33BA61 /* OneSignalLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OneSignalLocation.m; path = "onesignal-cordova-plugin/OneSignalLocation.m"; sourceTree = "<group>"; };
+		86BB0D0147A548C8AA367B7F /* OneSignalHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OneSignalHTTPClient.h; path = "onesignal-cordova-plugin/OneSignalHTTPClient.h"; sourceTree = "<group>"; };
 		876180002BEF42B8AF486D10 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookConnectPlugin.m; path = "phonegap-facebook-plugin/FacebookConnectPlugin.m"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Clubaroy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Clubaroy-Info.plist"; path = "../Clubaroy-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		95296EA61CA533D800FC7C66 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-2.xcassets"; path = "Clubaroy/Images-2.xcassets"; sourceTree = SOURCE_ROOT; };
 		954946851C6B18E800284D16 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Clubaroy/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		9CC8398995C64A66A4B5F98E /* Security.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A03B581333FD4B8AB88A693F /* OneSignalTrackIAP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OneSignalTrackIAP.h; path = "onesignal-cordova-plugin/OneSignalTrackIAP.h"; sourceTree = "<group>"; };
+		A872E9F11FDD49598D7A2237 /* OneSignalLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OneSignalLocation.h; path = "onesignal-cordova-plugin/OneSignalLocation.h"; sourceTree = "<group>"; };
 		C1AC95C644FF4A46B7CAB1FE /* CDVDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
+		C7043A737F67475C959A3952 /* SystemConfiguration.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CD0CB140E24C4AC2863A54D6 /* OneSignalJailbreakDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OneSignalJailbreakDetection.h; path = "onesignal-cordova-plugin/OneSignalJailbreakDetection.h"; sourceTree = "<group>"; };
+		CDF3202B34E14C048CF8B975 /* OneSignalReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OneSignalReachability.h; path = "onesignal-cordova-plugin/OneSignalReachability.h"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
+		DD43ED8F8FBE4249AE02B34C /* OneSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OneSignal.h; path = "onesignal-cordova-plugin/OneSignal.h"; sourceTree = "<group>"; };
 		E0C8C952B8E14E80AE5A9B85 /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookConnectPlugin.h; path = "phonegap-facebook-plugin/FacebookConnectPlugin.h"; sourceTree = "<group>"; };
+		E9A2C4D209004FE3AC9C009C /* OneSignalReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OneSignalReachability.m; path = "onesignal-cordova-plugin/OneSignalReachability.m"; sourceTree = "<group>"; };
 		EB87FDF21871DA7A0020F90C /* merges */ = {isa = PBXFileReference; lastKnownFileType = folder; name = merges; path = ../../merges; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED9BF99EF8CF461B81F07ED5 /* OneSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OneSignal.m; path = "onesignal-cordova-plugin/OneSignal.m"; sourceTree = "<group>"; };
 		F17C1BA6F8ED44FC91A7C802 /* Accounts.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		F604CED9B0A144F8B4200131 /* OneSignalTrackIAP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OneSignalTrackIAP.m; path = "onesignal-cordova-plugin/OneSignalTrackIAP.m"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Clubaroy/config.xml; sourceTree = "<group>"; };
+		FC4F96B7D4CE4388890CA717 /* OneSignalHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OneSignalHTTPClient.m; path = "onesignal-cordova-plugin/OneSignalHTTPClient.m"; sourceTree = "<group>"; };
+		FDE91628A79346D184BB420E /* OneSignalJailbreakDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OneSignalJailbreakDetection.m; path = "onesignal-cordova-plugin/OneSignalJailbreakDetection.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +162,7 @@
 				61FEBA9C682A45F0AF356D7C /* Accounts.framework in Frameworks */,
 				43DDD27CAF9C4C21B57666C3 /* Security.framework in Frameworks */,
 				B7AB23F23E3949D488300BB0 /* FacebookSDK.framework in Frameworks */,
+				AFE9663BE0A94FCF9C9EF854 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +221,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				95296EA61CA533D800FC7C66 /* Images-2.xcassets */,
 				954946851C6B18E800284D16 /* Images.xcassets */,
 				308D052D1370CCF300D202BF /* icons */,
 				308D05311370CCF300D202BF /* splash */,
@@ -217,6 +241,7 @@
 				F17C1BA6F8ED44FC91A7C802 /* Accounts.framework */,
 				9CC8398995C64A66A4B5F98E /* Security.framework */,
 				3A1ABFC5A6D5413BBCD0CA39 /* FacebookSDK.framework */,
+				C7043A737F67475C959A3952 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -236,6 +261,22 @@
 				C1AC95C644FF4A46B7CAB1FE /* CDVDevice.h */,
 				876180002BEF42B8AF486D10 /* FacebookConnectPlugin.m */,
 				E0C8C952B8E14E80AE5A9B85 /* FacebookConnectPlugin.h */,
+				ED9BF99EF8CF461B81F07ED5 /* OneSignal.m */,
+				FC4F96B7D4CE4388890CA717 /* OneSignalHTTPClient.m */,
+				F604CED9B0A144F8B4200131 /* OneSignalTrackIAP.m */,
+				FDE91628A79346D184BB420E /* OneSignalJailbreakDetection.m */,
+				15B790F271FC4FD2BC999EB2 /* OneSignalPush.m */,
+				E9A2C4D209004FE3AC9C009C /* OneSignalReachability.m */,
+				1AFC78F272924EE8BE3F5AD6 /* OneSignalMobileProvision.m */,
+				7F243732A40F4A4A9A33BA61 /* OneSignalLocation.m */,
+				DD43ED8F8FBE4249AE02B34C /* OneSignal.h */,
+				86BB0D0147A548C8AA367B7F /* OneSignalHTTPClient.h */,
+				A03B581333FD4B8AB88A693F /* OneSignalTrackIAP.h */,
+				CD0CB140E24C4AC2863A54D6 /* OneSignalJailbreakDetection.h */,
+				2E57B905F7FA4B75B382FC9F /* OneSignalPush.h */,
+				CDF3202B34E14C048CF8B975 /* OneSignalReachability.h */,
+				1ABE395EFB51461985ADC2BF /* OneSignalMobileProvision.h */,
+				A872E9F11FDD49598D7A2237 /* OneSignalLocation.h */,
 			);
 			name = Plugins;
 			path = Clubaroy/Plugins;
@@ -375,7 +416,6 @@
 			files = (
 				7E7966E41810823500FA85AD /* icon-76.png in Resources */,
 				7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */,
-				95296EA71CA533D800FC7C66 /* Images-2.xcassets in Resources */,
 				308D05371370CCF300D202BF /* icon-72.png in Resources */,
 				30B4F30119D5E07200D9F7D8 /* Default-736h.png in Resources */,
 				308D05381370CCF300D202BF /* icon.png in Resources */,
@@ -434,6 +474,14 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				EC1DA888AA98485FA7BE8149 /* CDVDevice.m in Sources */,
 				AD0DF9A7913F4AF0854AD36F /* FacebookConnectPlugin.m in Sources */,
+				A02971411C734E7CBA6BC3C4 /* OneSignal.m in Sources */,
+				5E0C4E7A05B94F3BB8189111 /* OneSignalHTTPClient.m in Sources */,
+				DC57FC84AD8F4DC9B3D18268 /* OneSignalTrackIAP.m in Sources */,
+				E4F09C0139B54B36855D09BA /* OneSignalJailbreakDetection.m in Sources */,
+				C74E77AAFFC248B69A28DE6D /* OneSignalPush.m in Sources */,
+				BF76D880C0604C2D94AC193D /* OneSignalReachability.m in Sources */,
+				979F257041BA48D296E91B36 /* OneSignalMobileProvision.m in Sources */,
+				F61A15B72B9D4F9EA1E66657 /* OneSignalLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +504,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -485,6 +534,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clubaroy.clubaroyapp;
 				PRODUCT_NAME = Clubaroy;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -497,6 +547,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -524,6 +575,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clubaroy.clubaroyapp;
 				PRODUCT_NAME = Clubaroy;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
